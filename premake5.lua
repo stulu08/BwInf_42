@@ -1,3 +1,4 @@
+require "cmake"
 workspace "BwInf_42"
 	configurations
 	{

@@ -10,3 +10,9 @@ build/
 *.vcxproj.filters
 *.vcxproj.user 
 *.csproj
+
+#CMake
+CMakeFiles/
+*.cmake
+CMakeLists.txt
+CMakeCache.txt
