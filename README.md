@@ -1,2 +1,1 @@
-# BwInf_42
-My submission to the "Bundeswettbewerb Informatik 42" 
+## More info can be found [here](https://bwinf.de/bundeswettbewerb/42/1/)
