@@ -20,6 +20,7 @@ project "Arukone"
 	includedirs
 	{
 		"src",
+		"%{wks.location}/common"
 	}
 	
 	
