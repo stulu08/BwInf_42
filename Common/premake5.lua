@@ -9,6 +9,7 @@ project "Common"
 	files
 	{
 		"include/**.h",
+		"build.cpp"
 	}
 
 	defines

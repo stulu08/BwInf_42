@@ -7,6 +7,7 @@
 
 #include <memory>
 #include <cstdint>
+#include <cmath>
 
 #include "SAssert.h"
 
