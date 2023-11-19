@@ -1,5 +1,5 @@
-project "Arukone"
-	kind "ConsoleApp"
+project "Common"
+	kind "StaticLib"
 	language "C++"
 	cppdialect "C++17"
 
@@ -8,8 +8,7 @@ project "Arukone"
 
 	files
 	{
-		"src/**.h",
-		"src/**.cpp",
+		"include/**.h",
 	}
 
 	defines
@@ -19,8 +18,7 @@ project "Arukone"
 
 	includedirs
 	{
-		"src",
-		"%{wks.location}/common/include"
+		"include",
 	}
 	
 	

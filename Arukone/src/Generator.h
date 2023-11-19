@@ -1,32 +1,17 @@
 #pragma once
-#include <memory>
-#include <array>
+#include "Grid.h"
 
-class Grid{
+class Generator {
 public:
-    Grid(uint32_t fieldSize, uint32_t pairCount);
-    ~Grid();
+	Generator(const Ref<Grid>& grid);
+	~Generator(){}
 
-    inline uint8_t GetValue(uint32_t x, uint32_t y) const {
-        if(m_grid)
-            return m_grid[CoordsToIndex(x,y)] != 0;
-        return 0;
-    }
-    
+	// returns number of pairs
+	uint32_t Generate();
 
-    inline uint8_t HasValue(uint32_t x, uint32_t y) const {
-        if(m_grid)
-            return m_grid[CoordsToIndex(x,y)] != 0;
-        return false;
-    } 
-
+	inline Ref<Grid> GetPathGrid() const { return m_pathGrid; }
 private:
-	inline constexpr uint32_t CoordsToIndex(uint32_t x, uint32_t y) const {
-        return x * m_fieldSize + y;
-	}
+	Ref<Grid> m_grid;
+	Ref<Grid> m_pathGrid;
 
-    uint8_t* m_grid;
-
-    uint32_t m_fieldSize;
-    uint32_t m_pairCount;
 };

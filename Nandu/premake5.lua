@@ -1,4 +1,4 @@
-project "Arukone"
+project "Nandu"
 	kind "ConsoleApp"
 	language "C++"
 	cppdialect "C++17"

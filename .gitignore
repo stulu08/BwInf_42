@@ -6,6 +6,7 @@ bin-int/
 build/
 
 #Files
+Makefile
 *.sln
 *.vcxproj
 *.vcxproj.filters

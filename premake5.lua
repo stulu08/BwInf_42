@@ -24,5 +24,7 @@ workspace "BwInf_42"
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 builddir = "%{wks.location}/build/%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+include "Common"
 include "Arukone"
+include "Nandu"
 
